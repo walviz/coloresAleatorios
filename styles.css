@@ -1,0 +1,54 @@
+/*selector general*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 100vh;/*para coupar el 100% de la ventana*/
+  background-color: #2B807B;
+  text-align: center;
+}
+
+.centrar-flex {
+  
+  display: flex;/*lo combierte tipo caja y los alinea verticalmente los items*/
+  /*para centrar horizontal y verticalmente se usa  justify-content: center; y align-items: center;*/
+  justify-content: center;/*justificar contenido: centra la caja en el body*/
+  align-items: center; /*alinear items = alinea los elementos horizontalmente*/
+}
+
+/*contenedor*/
+#contenedor {
+  height: 220px;/*altura*/
+  width: 450px;/*ancho*/
+  background-color: white;
+  border: 5px solid black;
+  flex-wrap: wrap;/*se distribuye en varias lineas si se necesita*/
+  flex-direction: column;/*los items se distribuyen de forma vertical en columnas*/
+}
+
+/*texto donde se muestra el color actual*/
+#color {
+  font-size: 70px;/*tamaño de fuente*/
+  font-weight: bold;/*ancho de la fuente: negrita*/
+  font-family: 'IBM Plex Sans', sans-serif !important; 
+}
+
+/*Boton*/
+button {
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+  background-color: #4764c2;
+  padding: 10px 30px;/*esto esl el espaciado que hay entre el border del boton y el texto*/
+  border: 3px solid #4764c2;
+  user-select: none;/*para que el usuario no pueda seleccionar el texto que esta dentro del bt*/
+  transition-duration: 0.4s;/*duracion de la transicion cuando haya algun cambio*/
+  cursor:pointer;/*cambia el puntero por una manita*/
+}
+
+button:hover {
+  background-color: #758ddb;
+}
